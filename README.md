@@ -40,7 +40,7 @@ Twitter (X) platformu için yapay zeka destekli yanıt oluşturma eklentisi.
 Eklentiyi geliştirmek için:
 
 ```bash
-git clone https://github.com/kullaniciadi/twitter-ai-extension.git
+git clone https://github.com/montecit/twitter-ai-extension.git
 cd twitter-ai-extension
 ```
 
