@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-button active" data-tab="main">Ana Sayfa</button>
+            <button class="tab-button" data-tab="settings">Ayarlar</button>
+        </div>
+
+        <div id="main" class="tab-content active">
+            <h2>Twitter AI Yanıt Asistanı</h2>
+            <div class="settings">
+                <label for="responseStyle">Yanıt Stili:</label>
+                <select id="responseStyle">
+                    <option value="formal">Resmi</option>
+                    <option value="casual">Samimi</option>
+                    <option value="professional">Profesyonel</option>
+                </select>
+            </div>
+            <div class="response-area">
+                <textarea id="generatedResponse" placeholder="Oluşturulan yanıt burada görünecek..." readonly></textarea>
+                <div id="loadingIndicator" class="loading-indicator">
+                    <div class="spinner"></div>
+                    <span>Yanıt oluşturuluyor...</span>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="copyButton">Kopyala</button>
+                <button id="replyButton">Yanıtla</button>
+            </div>
+        </div>
+
+        <div id="settings" class="tab-content">
+            <h2>API Ayarları</h2>
+            <div class="settings-form">
+                <div class="form-group">
+                    <label for="huggingfaceKey">Huggingface API Key:</label>
+                    <input type="password" id="huggingfaceKey" placeholder="API Key giriniz">
+                    <button id="showHuggingfaceKey" class="show-key">Göster</button>
+                </div>
+                <div class="form-group">
+                    <label for="googleAIKey">Google AI API Key:</label>
+                    <input type="password" id="googleAIKey" placeholder="API Key giriniz">
+                    <button id="showGoogleAIKey" class="show-key">Göster</button>
+                </div>
+                <div class="form-group">
+                    <label for="activeAPI">Aktif API:</label>
+                    <select id="activeAPI">
+                        <option value="huggingface">Huggingface</option>
+                        <option value="googleAI">Google AI</option>
+                    </select>
+                </div>
+                <button id="saveSettings" class="save-button">Kaydet</button>
+                <div class="api-test">
+                    <h3>API Test</h3>
+                    <textarea id="testInput" placeholder="Test için metin girin..." rows="3"></textarea>
+                    <button id="testAPI" class="test-button">API'yi Test Et</button>
+                    <div id="testResult" class="test-result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/popup.js"></script>
+</body>
+</html> 

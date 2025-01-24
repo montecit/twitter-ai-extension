@@ -1,0 +1,35 @@
+{
+  "name": "twitter-ai-extension",
+  "version": "1.0.0",
+  "description": "Twitter (X) platformu için yapay zeka destekli yanıt oluşturma eklentisi",
+  "main": "background.js",
+  "scripts": {
+    "build": "web-ext build",
+    "start": "web-ext run",
+    "lint": "web-ext lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kullaniciadi/twitter-ai-extension.git"
+  },
+  "keywords": [
+    "twitter",
+    "x",
+    "ai",
+    "firefox",
+    "extension",
+    "addon",
+    "artificial-intelligence",
+    "gemini",
+    "huggingface"
+  ],
+  "author": "Kullanıcı Adı",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kullaniciadi/twitter-ai-extension/issues"
+  },
+  "homepage": "https://github.com/kullaniciadi/twitter-ai-extension#readme",
+  "devDependencies": {
+    "web-ext": "^7.11.0"
+  }
+} 
